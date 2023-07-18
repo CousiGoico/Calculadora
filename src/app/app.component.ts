@@ -7,4 +7,24 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Calculadora';
+
+  primerNumero:number= 0;
+  segundoNumero:number= 0;
+  resultado:number = 0;
+
+  suma():void{
+    this.resultado= Number(this.primerNumero) + Number(this.segundoNumero);
+  }
+  resta():void{
+    this.resultado= this.primerNumero - this.segundoNumero;
+  }
+  multiplicacion():void{
+    this.resultado= this.primerNumero * this.segundoNumero;
+  }
+  division():void{
+    if (this.segundoNumero === 0){
+      this.resultado = 0;
+    }
+    this.resultado= (this.primerNumero / this.segundoNumero);
+  }
 }
