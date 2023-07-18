@@ -13,7 +13,7 @@ export class AppComponent {
   resultado:number = 0;
 
   suma():void{
-    this.resultado= Number(this.primerNumero) + Number(this.segundoNumero);
+    this.resultado= this.primerNumero + this.segundoNumero;
   }
   resta():void{
     this.resultado= this.primerNumero - this.segundoNumero;
